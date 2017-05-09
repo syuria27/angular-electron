@@ -1,0 +1,28 @@
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <!--<div class="navbar-header">
+      <a class="navbar-brand" routerLink="/home">Aplikasi Pembayaran</a>
+    </div>-->
+    <ul class="nav navbar-nav">
+      <li [routerLinkActive]="['active']"><a routerLink="/home"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+      <!--<li style="cursor:pointer" [routerLinkActive]="['active']">
+        <a dropdown class="dropdown">
+          <div dropdownToggle class="dropdown-toggle">
+            Product Report <span class="caret"></span>
+          </div>
+          <div *dropdownMenu class="dropdown-menu">
+            <li><a routerLink="/daily-report">Daily</a></li>
+            <li><a routerLink="/monthly-report">Monthly</a></li>
+          </div>
+        </a>
+      </li>-->
+      <li [routerLinkActive]="['active']"><a routerLink="/absen"><span class="glyphicon glyphicon-user"></span> Siswa</a></li>
+      <li [routerLinkActive]="['active']"><a routerLink="/focus"><span class="glyphicon glyphicon-usd"></span> Pembayaran</a></li>
+    </ul>
+  <div class="container-fluid">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a>{{user}}</a></li>
+      <li><a (click)="logout()" style="cursor:pointer"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+    </ul>
+  </div>
+</nav>
