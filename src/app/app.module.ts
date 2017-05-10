@@ -21,13 +21,19 @@ import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/do';
 import 'rxjs/add/observable/throw';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ListSiswaComponent } from './components/list-siswa/list-siswa.component';
+import { CreateSiswaComponent } from './components/create-siswa/create-siswa.component';
+import { EditSiswaComponent } from './components/edit-siswa/edit-siswa.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    NavbarComponent
+    NavbarComponent,
+    ListSiswaComponent,
+    CreateSiswaComponent,
+    EditSiswaComponent
   ],
   imports: [
     BrowserModule,

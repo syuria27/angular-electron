@@ -6,3 +6,13 @@
   -webkit-background-size: cover; /* pour anciens Chrome et Safari */
   background-size: cover; /* version standardisée */
 }
+
+.logo {
+    width: 150px;
+    height: 150px;
+ }
+
+ .vertical-align {
+    display: flex;
+    align-items: center;
+}
